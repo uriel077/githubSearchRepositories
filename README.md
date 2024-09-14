@@ -1,5 +1,5 @@
 # GitHub Repositories Search Page
-This project is a GitHub repositories search page built with Angular 17, Angular Material and .NET Framework/.NET 6 (Web API).
+This project is a GitHub repositories search page built with Angular 17, Angular Material and .NET Framework/.NET 6 (Web API).<br>
 It allows users to search for GitHub repositories and bookmark them in their session, using a custom session implementation with JWT authentication for client-server communication.
 
 # Key Features:
