@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="custom-navbar flex flex-row gap-4">
+  <button mat-button class="sm:inline-block hidden" (click)="navigate('/githubSearch')">Search Repositories</button>
+  <button mat-button class="sm:inline-block hidden" (click)="navigate('/bookmarks')">Bookmarks</button>
+  <button mat-button class="sm:inline-block hidden" (click)="navigate('/')">Login</button>
+
+
+  <button mat-icon-button class="sm:hidden inline-block" aria-label="Menu" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-nav-list *ngIf="menuOpen" class="bg-slate-300 sm:hidden inline-block">
+  <a mat-list-item (click)="navigate('/githubSearch')">Search Repositories</a>
+  <a mat-list-item (click)="navigate('/bookmarks')">Bookmarks</a>
+  <a mat-list-item (click)="navigate('/')">Login</a>
+</mat-nav-list>
+<app-loading class="loading absolute z-50 w-full h-full pointer-events-none content-center items-center justify-center text-center"></app-loading>
+
+<router-outlet></router-outlet>

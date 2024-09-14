@@ -1,0 +1,13 @@
+::-webkit-scrollbar 
+{ 
+    width: 4px; 
+    overflow-y: scroll; 
+    background: rgb(202, 202, 202); 
+    box-shadow: inset 0 0 4px #707070; 
+} 
+ 
+::-webkit-scrollbar-thumb 
+{ 
+    background: #6200ea; 
+    border-radius: 10px; 
+}

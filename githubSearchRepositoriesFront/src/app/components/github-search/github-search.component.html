@@ -1,0 +1,22 @@
+<div class="m-5">
+  <input class="input-primary" matInput type="text" [(ngModel)]="this.searchKeyword" placeholder="Enter repository name"  (keydown.enter)="this.search()"/>
+  <button mat-raised-button class="button-primary" (click)="this.search()">Search</button>
+</div>
+
+<div>
+  <div class="flex flex-wrap gap-5 h-3/4 overflow-auto p-3">
+    <div *ngFor="let repo of repositories" class="border border-gray-300 p-5 rounded-lg w-52 text-center">
+      <div class="flex flex-col h-52">
+        <div class="flex flex-col h-3/4">
+          <mat-icon *ngIf="this.bookmarkedRepositories[repo.id]" class="self-end">bookmark</mat-icon>
+          <img [src]="repo.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full border border-gray-300 self-center">
+          <h3>{{ repo?.name }}</h3>
+        </div>
+        <div class="flex flex-col h-1/4">
+          <button *ngIf="!this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, true)">Bookmark</button>
+          <button *ngIf="this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, false)">Remove Bookmark</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

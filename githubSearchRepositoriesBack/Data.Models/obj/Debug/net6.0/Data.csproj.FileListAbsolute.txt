@@ -1,0 +1,4 @@
+C:\Users\uriel\source\repos\githubPhoenix\Data.Models\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uriel\source\repos\githubPhoenix\Data.Models\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+C:\Users\uriel\source\repos\githubPhoenix\Data.Models\obj\Debug\net6.0\Data.AssemblyInfo.cs
+C:\Users\uriel\source\repos\githubPhoenix\Data.Models\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
