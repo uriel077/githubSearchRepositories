@@ -76,3 +76,4 @@ C:\Users\uriel\source\repos\githubSearchRepositories\githubSearchRepositoriesBac
 C:\Users\uriel\source\repos\githubSearchRepositories\githubSearchRepositoriesBack\githubPhoenix\obj\Debug\net6.0\githubPhoenix.pdb
 C:\Users\uriel\source\repos\githubSearchRepositories\githubSearchRepositoriesBack\githubPhoenix\obj\Debug\net6.0\githubPhoenix.genruntimeconfig.cache
 C:\Users\uriel\source\repos\githubSearchRepositories\githubSearchRepositoriesBack\githubPhoenix\obj\Debug\net6.0\ref\githubPhoenix.dll
+C:\Users\uriel\source\repos\githubSearchRepositories\githubSearchRepositoriesBack\githubPhoenix\obj\Debug\net6.0\githubPhoenix.sourcelink.json

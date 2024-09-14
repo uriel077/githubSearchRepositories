@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { AppConfig } from '../enviorement/AppConfig';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class AuthService
     login(): Observable<any>
     {        
         var username = "uriel";
-        return (this.http.post<any>(`${AppConfig.ApiUrlBase}Auth/login`, { username:username }));
+        return (this.http.post<any>(`${environment.apiUrl}Auth/login`, { username:username }));
     }
 
     /**
@@ -25,6 +25,6 @@ export class AuthService
      */
     logout(): Observable<any>
     {        
-        return (this.http.post<any>(`${AppConfig.ApiUrlBase}Auth/logout`, ''));
+        return (this.http.post<any>(`${environment.apiUrl}Auth/logout`, ''));
     }
 }

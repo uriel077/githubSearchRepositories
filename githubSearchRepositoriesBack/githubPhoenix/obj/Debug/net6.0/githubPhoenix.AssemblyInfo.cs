@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("githubPhoenix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19160a7f777d76019b42ddaf3009b066a38ec608")]
 [assembly: System.Reflection.AssemblyProductAttribute("githubPhoenix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("githubPhoenix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

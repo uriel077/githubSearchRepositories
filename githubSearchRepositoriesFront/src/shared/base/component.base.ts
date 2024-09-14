@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { finalize } from 'rxjs/operators';
 
-import * as consts from '../enviorement/consts';
+import * as consts from '../environments/consts';
 
 import { withLoading } from '../component/loading/loading.operator';
 import { LoadingService } from '../component/loading/loading.service';

@@ -12,9 +12,14 @@ It allows users to search for GitHub repositories and bookmark them in their ses
 # How to Run the Project:
 1. Clone the repository.
 2. Install required dependencies for Angular frontend.
-3. Configure the GitHub API and JWT settings.
-4. Start the backend server and frontend development server.
-5. Access the application in your browser.
+3. Start the backend server with enter folder githubSearchRepositories\githubSearchRepositoriesBack\githubPhoenix\bin\Debug\net6.0 and open githubPhoenix.exe. (you start in prod mode)
+4. frontend development server enter folder githubSearchRepositories\githubSearchRepositoriesFront and run ng serve --configuration production.
+5. Access the application in your browser http://localhost:4200/.
+
+# How to launch the project for development mode.
+1. Start the backend server with enter folder githubSearchRepositories\githubSearchRepositoriesBack\ and open githubPhoenix.sln.
+2. frontend development server enter folder githubSearchRepositories\githubSearchRepositoriesFront and run ng serve --configuration development.
+3. Access the application in your browser http://localhost:4200/.
 
 # Technologies Used:
 - Frontend: Angular 17 and Angular Material.

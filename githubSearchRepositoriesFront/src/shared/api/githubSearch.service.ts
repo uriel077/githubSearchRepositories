@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { AppConfig } from '../enviorement/AppConfig';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +18,6 @@ export class GithubSearchService
      */
     searchRepositories(keyword: string): Observable<any>
     {
-        return this.http.get<any>(`${AppConfig.ApiUrlBase}GithubSearch/search/${keyword}`);
+        return this.http.get<any>(`${environment.apiUrl}GithubSearch/search/${keyword}`);
     }
 }

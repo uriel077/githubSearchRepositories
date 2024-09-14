@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { catchError, Observable, tap, throwError } from 'rxjs';
 
-import * as consts from '../enviorement/consts';
+import * as consts from '../environments/consts';
 
 @Injectable()
 export class ApiInterceptor implements HttpInterceptor

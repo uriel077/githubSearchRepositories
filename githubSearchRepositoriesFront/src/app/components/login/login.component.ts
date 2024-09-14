@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIcon } from '@angular/material/icon';
 
-import * as consts from '../../../shared/enviorement/consts';
+import * as consts from '../../../shared/environments/consts';
 
 import { AuthService } from '../../../shared/api/auth.service';
 import { ComponentBase } from '../../../shared/base/component.base';
