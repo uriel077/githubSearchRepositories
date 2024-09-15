@@ -67,8 +67,7 @@
               "RelativeToolTip": "githubPhoenix\\Models\\UserCredentials .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:32:59.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T15:32:59.805Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "githubPhoenix\\Controllers\\Auth.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAA1wD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:23:26.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T15:23:26.787Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "githubPhoenix\\Middleware\\JwtMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T14:50:41.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T14:50:41.976Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "githubPhoenix\\Models\\GithubRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:08:44.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T20:08:44.527Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "githubPhoenix\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-09T19:18:33.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T19:18:33.122Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "githubPhoenix\\Controllers\\GithubSearch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:25:38.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T15:25:38.789Z"
             },
             {
               "$type": "Document",
@@ -145,8 +139,7 @@
               "RelativeToolTip": "githubPhoenix\\Program.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T14:11:55.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T14:11:55.665Z"
             }
           ]
         }

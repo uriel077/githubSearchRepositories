@@ -7,6 +7,7 @@ import { MatIcon } from '@angular/material/icon';
 import * as consts from 'src/shared/config/consts';
 
 import { AuthService } from 'src/shared/api/auth.service';
+
 import { ComponentBase } from 'src/shared/base/component.base';
 
 @Component({

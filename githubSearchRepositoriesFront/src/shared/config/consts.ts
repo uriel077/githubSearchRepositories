@@ -16,4 +16,9 @@ export const HttpCodes = {
     OK : 200,
     Unauthorized : 401,
     NotFound : 404
- }
+}
+
+/** 
+ * The value 30. 
+ */ 
+export const THIRTY: number = 30;

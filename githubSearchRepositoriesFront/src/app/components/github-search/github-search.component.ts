@@ -9,13 +9,13 @@ import { GithubSearchService } from 'src/shared/api/githubSearch.service';
 import { BookmarkService } from 'src/shared/services/bookmark.service';
 import { LocalStorageService } from 'src/shared/services/localStorage.service';
 import { ComponentBase } from 'src/shared/base/component.base';
-
+import { PipesModule } from 'src/shared/pipes/pipes.module';
 
 @Component({
   changeDetection:  ChangeDetectionStrategy.OnPush,
   selector:         'app-github-search',
   standalone:       true,
-  imports:          [CommonModule, FormsModule, HttpClientModule, MatIcon, MatTooltip],
+  imports:          [CommonModule, FormsModule, HttpClientModule, MatIcon, MatTooltip, PipesModule],
   templateUrl:      './github-search.component.html',
   styleUrls:        ['./github-search.component.scss'],
 })

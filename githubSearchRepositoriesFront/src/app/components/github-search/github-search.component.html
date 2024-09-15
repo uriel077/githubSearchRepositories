@@ -10,7 +10,7 @@
         <div class="flex flex-col h-3/4">
           <mat-icon *ngIf="this.bookmarkedRepositories[repo.id]" class="self-end">bookmark</mat-icon>
           <img [src]="repo.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full border border-gray-300 self-center">
-          <h3>{{ repo?.name }}</h3>
+          <h3 class="whitespace-normal break-words">{{ repo?.name | truncate }}</h3>
         </div>
         <div class="flex flex-col h-1/4">
           <button *ngIf="!this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, true)" [matTooltip]="'Bookmark ' + repo?.name + ' repo'">Bookmark</button>

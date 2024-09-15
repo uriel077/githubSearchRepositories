@@ -7,7 +7,7 @@
             <div class="flex flex-col h-52">
                 <div class="flex flex-col h-3/4">
                     <img [src]="repo.avatarUrl" alt="Avatar" class="w-16 h-16 rounded-full border border-gray-300 self-center">
-                    <h3>{{ repo?.name }}</h3>
+                    <h3 class="whitespace-normal break-words">{{ repo?.name }}</h3>
                 </div>
                 <div class="flex flex-col h-1/4">
                     <button class="button-primary" mat-raised-button (click)="removeBookmark(repo.id)" [matTooltip]="'Remove bookmark from ' + repo?.name + ' repo'">Remove Bookmark</button>
