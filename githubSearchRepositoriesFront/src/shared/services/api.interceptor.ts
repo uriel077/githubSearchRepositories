@@ -1,21 +1,26 @@
 import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { Router } from '@angular/router';
 import { catchError, Observable, tap, throwError } from 'rxjs';
 
-import * as consts from '../environments/consts';
+import * as consts from '../config/consts';
+import { isNumber } from '../config/helper';
 
 @Injectable()
 export class ApiInterceptor implements HttpInterceptor
 {
-    constructor() { }
+    constructor(protected readonly router: Router) { }
 
-    intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
+    /**
+     * Intercepts the request to handle it.
+     * @param request The request to intercept.
+     * @param next The handler to continue the request with.
+     */
+    public intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
     {
-        let apiRequest: HttpRequest<any> = request.clone({ withCredentials: true });
+        let apiRequest: HttpRequest<any>    = request.clone({ withCredentials: true });
 
-        //const token = this.authService.getToken();
-        //const token = this.getCookie('AuthCookie');
-        const token = sessionStorage.getItem(consts.accessTokenKey);
+        const token                         = sessionStorage.getItem(consts.accessTokenKey);
         
         if (token)
         {
@@ -25,7 +30,12 @@ export class ApiInterceptor implements HttpInterceptor
                 }
             });
 
-            return next.handle(clonedReq);
+            return (next.handle(clonedReq)
+                .pipe( 
+                    tap(this.interceptResponse.bind(this)), 
+                    catchError((err: any, caught: Observable<any>) => this.catchRequestError(err, caught, apiRequest, next)), 
+                )
+            );
         }
        
         return (next.handle(apiRequest) 
@@ -57,14 +67,24 @@ export class ApiInterceptor implements HttpInterceptor
      * @param err The request error to process. 
      */ 
     protected catchRequestError(err: HttpResponse<any> | any, caught: Observable<any>, apiReq: HttpRequest<any>, next: HttpHandler): Observable<any> 
-    { 
+    {
         // If the rejection has a status, handle it. 
-        if (err.status) 
-        { 
+        if (isNumber(err.status))
+        {            
+            // If the authentication failed. 
+            if (err.status === consts.HttpCodes.Null) 
+            {
+                sessionStorage.removeItem(consts.accessTokenKey);
+                console.warn('unauthorized');
+                this.router.navigate(['/']).catch(err => console.error('Couldn\'t navigate', err));
+            }
+
             // If the authentication failed. 
             if (err.status === consts.HttpCodes.Unauthorized) 
             {
+                sessionStorage.removeItem(consts.accessTokenKey);
                 console.warn('unauthorized');
+                this.router.navigate(['/']).catch(err => console.error('Couldn\'t navigate', err));
             } 
         } 
  

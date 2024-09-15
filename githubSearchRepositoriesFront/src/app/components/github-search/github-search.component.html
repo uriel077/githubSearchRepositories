@@ -1,6 +1,6 @@
-<div class="m-5">
-  <input class="input-primary" matInput type="text" [(ngModel)]="this.searchKeyword" placeholder="Enter repository name"  (keydown.enter)="this.search()"/>
-  <button mat-raised-button class="button-primary" (click)="this.search()">Search</button>
+<div class="flex flex-row m-5 gap-2">
+  <input class="input-primary" matInput type="text" [(ngModel)]="this.searchKeyword" placeholder="Enter repository name"  (keydown.enter)="this.search()" autofocus/>
+  <button mat-raised-button class="button-primary" [disabled]="this.searchKeyword.length === 0" (click)="this.search()">Search</button>
 </div>
 
 <div>
@@ -13,8 +13,8 @@
           <h3>{{ repo?.name }}</h3>
         </div>
         <div class="flex flex-col h-1/4">
-          <button *ngIf="!this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, true)">Bookmark</button>
-          <button *ngIf="this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, false)">Remove Bookmark</button>
+          <button *ngIf="!this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, true)" [matTooltip]="'Bookmark ' + repo?.name + ' repo'">Bookmark</button>
+          <button *ngIf="this.bookmarkedRepositories[repo.id]" class="button-primary" mat-raised-button (click)="bookmark(repo, false)" [matTooltip]="'Remove bookmark from ' + repo?.name + ' repo'">Remove Bookmark</button>
         </div>
       </div>
     </div>

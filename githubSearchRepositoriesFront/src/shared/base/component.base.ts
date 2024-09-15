@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { finalize } from 'rxjs/operators';
 
-import * as consts from '../environments/consts';
+import * as consts from '../config/consts';
 
 import { withLoading } from '../component/loading/loading.operator';
 import { LoadingService } from '../component/loading/loading.service';
@@ -94,8 +94,6 @@ export abstract class ComponentBase implements OnInit, OnDestroy
      */
     public onFinalize(): void
     {
-        this.stopLoading();
-        
         this.cdr.markForCheck();
     }
 
@@ -109,53 +107,6 @@ export abstract class ComponentBase implements OnInit, OnDestroy
      * Function to be run when component is being destroyed.
      */
     protected onDestroy?(): void;
-
-    /**
-     * Starts the loading loader.
-     * @param callback A callback to run after loading has started.
-     */
-    public startLoading(callback?: () => void): void
-    {
-        if (callback)
-        {
-            setTimeout(
-                () =>
-                {
-                    callback();
-
-                    this.cdr.markForCheck();
-                }
-            );
-        }
-    }
-
-    /**
-     * Stops the loading loader.
-     * @param callback A callback to run after loading has stopped.
-     */
-    public stopLoading(callback?: () => void): void
-    {
-        this.cdr.markForCheck();
-
-        setTimeout(
-            () =>
-            {
-                this.cdr.markForCheck();
-
-                if (callback)
-                {
-                    setTimeout(
-                        () =>
-                        {
-                            callback();
-
-                            this.cdr.markForCheck();
-                        }
-                    );
-                }
-            },
-            DEBOUNCE_DELAY);
-    }
 
     /**
      * Verify user is authorized to view page by default returns false.
@@ -172,9 +123,8 @@ export abstract class ComponentBase implements OnInit, OnDestroy
      */
     protected handleUnauthorizedPage(): void
     {
-        this.stopLoading();
         console.warn('Does not have permission');
-        this.router.navigate(['/']).catch(err => console.error('Couldn\'t navigate', err));
+        this.navigate(['/']);
     }
 
     /**
@@ -197,5 +147,14 @@ export abstract class ComponentBase implements OnInit, OnDestroy
         {
             this.handleUnauthorizedPage();
         }
+    }
+
+    /**
+     * Navigate funcrion.
+     * @param routes The route.
+     */
+    protected navigate(routes: string[]): void
+    {
+        this.router.navigate(routes).catch(err => console.error('Couldn\'t navigate', err));
     }
 }

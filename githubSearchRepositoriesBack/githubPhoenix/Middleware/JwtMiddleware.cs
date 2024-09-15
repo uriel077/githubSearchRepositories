@@ -25,7 +25,7 @@
 
         public JwtMiddleware(IConfiguration configuration, RequestDelegate next): this(configuration)
         {
-            _publicPaths = new HashSet<string>(new string[]{ "/api/Auth/login" }, StringComparer.OrdinalIgnoreCase);
+            _publicPaths = new HashSet<string>(new string[]{ "/api/Auth/login", "/api/Auth/logout" }, StringComparer.OrdinalIgnoreCase);
 
             _next = next;
         }
@@ -50,6 +50,17 @@
 
                 if (!tokenIsLegit)
                 {
+                    var cookieOptions = new CookieOptions
+                    {
+                        Path = "/",
+                        HttpOnly = true,
+                        Secure = true,
+                        Expires = DateTime.UtcNow.AddMinutes(-1),
+                    };
+
+                    context.Response.Cookies.Append("AuthCookie", "", cookieOptions);
+                    context.Response.Headers.Append("JWT", "");
+
                     context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                     await context.Response.WriteAsync("Unauthorized");
                     return;

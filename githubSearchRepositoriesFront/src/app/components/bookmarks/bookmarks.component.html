@@ -10,7 +10,7 @@
                     <h3>{{ repo?.name }}</h3>
                 </div>
                 <div class="flex flex-col h-1/4">
-                    <button class="button-primary" mat-raised-button (click)="removeBookmark(repo.id)">Remove Bookmark</button>
+                    <button class="button-primary" mat-raised-button (click)="removeBookmark(repo.id)" [matTooltip]="'Remove bookmark from ' + repo?.name + ' repo'">Remove Bookmark</button>
                 </div>
         </div>
     </div>    

@@ -16,8 +16,8 @@ export class GithubSearchService
      * @param keyword Keyword filter.
      * @returns Repositories filter by keyword.
      */
-    searchRepositories(keyword: string): Observable<any>
+    public searchRepositories(keyword: string): Observable<any>
     {
-        return this.http.get<any>(`${environment.apiUrl}GithubSearch/search/${keyword}`);
+        return (this.http.get<any>(`${environment.apiUrl}GithubSearch/search/${keyword}`));
     }
 }

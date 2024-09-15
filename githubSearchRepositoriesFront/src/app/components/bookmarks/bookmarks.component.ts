@@ -1,14 +1,15 @@
 import { ChangeDetectionStrategy, Component, Injector, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatTooltip } from '@angular/material/tooltip';
 
-import { BookmarkService } from '../../../shared/services/bookmark.service';
-import { ComponentBase } from '../../../shared/base/component.base';
+import { BookmarkService } from 'src/shared/services/bookmark.service';
+import { ComponentBase } from 'src/shared/base/component.base';
 
 @Component({
   changeDetection:  ChangeDetectionStrategy.OnPush,
   selector:         'app-bookmarks',
   standalone:       true,
-  imports:          [CommonModule ],
+  imports:          [CommonModule, MatTooltip],
   templateUrl:      './bookmarks.component.html',
   styleUrls:        ['./bookmarks.component.scss'],
 })
@@ -19,10 +20,8 @@ export class BookmarksComponent extends ComponentBase implements OnInit
      */
     public bookmarks: any[] = [];
 
-    constructor( 
-            injector: Injector,
-            private bookmarkService: BookmarkService
-    ) {
+    constructor(injector: Injector, private bookmarkService: BookmarkService)
+    {
         super(injector);
     }
 

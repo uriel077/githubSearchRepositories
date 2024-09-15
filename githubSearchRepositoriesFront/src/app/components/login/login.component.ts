@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIcon } from '@angular/material/icon';
 
-import * as consts from '../../../shared/environments/consts';
+import * as consts from 'src/shared/config/consts';
 
-import { AuthService } from '../../../shared/api/auth.service';
-import { ComponentBase } from '../../../shared/base/component.base';
+import { AuthService } from 'src/shared/api/auth.service';
+import { ComponentBase } from 'src/shared/base/component.base';
 
 @Component({
   changeDetection:  ChangeDetectionStrategy.OnPush,
-  selector:         'app-Login',
+  selector:         'app-login',
   standalone:       true,
   imports:          [CommonModule, FormsModule, HttpClientModule, MatIcon],
   templateUrl:      './Login.component.html',
@@ -24,10 +24,7 @@ export class LoginComponent extends ComponentBase
      */
     public isLogin: boolean = false;
 
-    constructor(
-        injector: Injector,
-        private authService: AuthService
-    )
+    constructor(injector: Injector, private authService: AuthService)
     {
         super(injector);
     }
@@ -46,7 +43,7 @@ export class LoginComponent extends ComponentBase
     /**
      * The login for the app.
      */
-    public login()
+    public login(): void
     {
         this.authService
             .login()
@@ -54,7 +51,7 @@ export class LoginComponent extends ComponentBase
             .subscribe(response => {               
                 sessionStorage.setItem(consts.accessTokenKey, response.token);
                 this.isLogin = false;
-                this.router.navigate(['/githubSearch']);
+                this.navigate(['/githubSearch']);
             }
         );
     }
@@ -62,15 +59,15 @@ export class LoginComponent extends ComponentBase
     /**
      * The logout for the app.
      */
-    public logout()
+    public logout(): void
     {
         this.authService
             .logout()
             .pipe(this.unsubscribeLoadingPipe())
             .subscribe(response => {                
-                sessionStorage.removeItem(consts.accessTokenKey );
+                sessionStorage.removeItem(consts.accessTokenKey);
                 this.isLogin = true;
-                this.router.navigate(['/']);
+                this.navigate(['/']);
             }
         );
     }

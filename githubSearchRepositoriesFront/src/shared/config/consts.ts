@@ -12,6 +12,7 @@ export const accessTokenKey: string     = 'accessToken';
  * Http codes.
  */
 export const HttpCodes = {
+    Null: 0,
     OK : 200,
     Unauthorized : 401,
     NotFound : 404

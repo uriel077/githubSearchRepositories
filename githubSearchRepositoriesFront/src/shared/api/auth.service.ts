@@ -14,7 +14,7 @@ export class AuthService
     /**
      * Login post. 
      */
-    login(): Observable<any>
+    public login(): Observable<any>
     {        
         var username = "uriel";
         return (this.http.post<any>(`${environment.apiUrl}Auth/login`, { username:username }));
@@ -23,7 +23,7 @@ export class AuthService
     /**
      * Logout post. 
      */
-    logout(): Observable<any>
+    public logout(): Observable<any>
     {        
         return (this.http.post<any>(`${environment.apiUrl}Auth/logout`, ''));
     }

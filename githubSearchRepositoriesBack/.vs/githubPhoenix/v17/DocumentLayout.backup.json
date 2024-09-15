@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\controllers\\githubsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\controllers\\githubsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\models\\githubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\models\\githubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\models\\usercredentials .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\models\\usercredentials .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\controllers\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,22 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\models\\githubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\models\\githubrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\controllers\\githubsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\controllers\\githubsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|c:\\users\\uriel\\source\\repos\\githubsearchrepositories\\githubsearchrepositoriesback\\githubphoenix\\models\\usercredentials .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D156030-42DD-4280-8295-A20AD361DC55}|githubPhoenix\\githubPhoenix.csproj|solutionrelative:githubphoenix\\models\\usercredentials .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\appsettings.json",
               "RelativeDocumentMoniker": "githubPhoenix\\appsettings.json",
@@ -54,11 +54,12 @@
               "RelativeToolTip": "githubPhoenix\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-09T19:13:27.286Z"
+              "WhenOpened": "2024-09-09T19:13:27.286Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "UserCredentials .cs",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Models\\UserCredentials .cs",
               "RelativeDocumentMoniker": "githubPhoenix\\Models\\UserCredentials .cs",
@@ -66,31 +67,34 @@
               "RelativeToolTip": "githubPhoenix\\Models\\UserCredentials .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:32:59.805Z"
+              "WhenOpened": "2024-09-10T15:32:59.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Auth.cs",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Controllers\\Auth.cs",
               "RelativeDocumentMoniker": "githubPhoenix\\Controllers\\Auth.cs",
               "ToolTip": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Controllers\\Auth.cs",
               "RelativeToolTip": "githubPhoenix\\Controllers\\Auth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:23:26.787Z"
+              "WhenOpened": "2024-09-10T15:23:26.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "JwtMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Middleware\\JwtMiddleware.cs",
               "RelativeDocumentMoniker": "githubPhoenix\\Middleware\\JwtMiddleware.cs",
               "ToolTip": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Middleware\\JwtMiddleware.cs",
               "RelativeToolTip": "githubPhoenix\\Middleware\\JwtMiddleware.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAArwCMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T14:50:41.976Z"
+              "WhenOpened": "2024-09-10T14:50:41.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,11 +106,12 @@
               "RelativeToolTip": "githubPhoenix\\Models\\GithubRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:08:44.527Z"
+              "WhenOpened": "2024-09-09T20:08:44.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "githubPhoenix\\Properties\\launchSettings.json",
@@ -119,15 +124,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "GithubSearch.cs",
               "DocumentMoniker": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Controllers\\GithubSearch.cs",
               "RelativeDocumentMoniker": "githubPhoenix\\Controllers\\GithubSearch.cs",
               "ToolTip": "C:\\Users\\uriel\\source\\repos\\githubSearchRepositories\\githubSearchRepositoriesBack\\githubPhoenix\\Controllers\\GithubSearch.cs",
               "RelativeToolTip": "githubPhoenix\\Controllers\\GithubSearch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:25:38.789Z"
+              "WhenOpened": "2024-09-09T15:25:38.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

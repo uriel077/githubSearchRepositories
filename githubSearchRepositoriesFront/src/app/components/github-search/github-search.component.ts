@@ -3,18 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIcon } from '@angular/material/icon';
+import { MatTooltip } from '@angular/material/tooltip';
 
-import { GithubSearchService } from '../../../shared/api/githubSearch.service';
-import { BookmarkService } from '../../../shared/services/bookmark.service';
-import { LocalStorageService } from '../../../shared/services/localStorage.service';
-import { ComponentBase } from '../../../shared/base/component.base';
+import { GithubSearchService } from 'src/shared/api/githubSearch.service';
+import { BookmarkService } from 'src/shared/services/bookmark.service';
+import { LocalStorageService } from 'src/shared/services/localStorage.service';
+import { ComponentBase } from 'src/shared/base/component.base';
 
 
 @Component({
   changeDetection:  ChangeDetectionStrategy.OnPush,
   selector:         'app-github-search',
   standalone:       true,
-  imports:          [CommonModule, FormsModule, HttpClientModule, MatIcon],
+  imports:          [CommonModule, FormsModule, HttpClientModule, MatIcon, MatTooltip],
   templateUrl:      './github-search.component.html',
   styleUrls:        ['./github-search.component.scss'],
 })
@@ -23,12 +24,12 @@ export class GithubSearchComponent extends ComponentBase implements OnInit
     /**
      * The search keyword.
      */
-    public searchKeyword: string = '';
+    public searchKeyword: string                            = '';
 
     /**
      * The list of repositories.
      */
-    public repositories: any[]   = [];
+    public repositories: any[]                              = [];
 
     /**
      * Dictionary for the bookmarked repositories.
@@ -68,7 +69,7 @@ export class GithubSearchComponent extends ComponentBase implements OnInit
     /**
      * Search the keyword in github
      */
-    public search()
+    public search(): void
     {
         this.githubSearchService
             .searchRepositories(this.searchKeyword)
@@ -90,7 +91,7 @@ export class GithubSearchComponent extends ComponentBase implements OnInit
      * @param searchKeyword 
      * @param repositories 
      */
-    private saveSearchToLocalStorage(searchKeyword: string, repositories: any[])
+    private saveSearchToLocalStorage(searchKeyword: string, repositories: any[]): void
     {
         const dataValue = {
             repositories: repositories,
@@ -103,13 +104,13 @@ export class GithubSearchComponent extends ComponentBase implements OnInit
     /**
      * Init bookmark dict.
      */
-    private initBookmarkDict()
+    private initBookmarkDict(): void
     {
         this.bookmarkedRepositories = this.bookmarkService
                                             .getBookmarks()
                                             .reduce((acc, obj) => {
                                                 acc[obj.id] = obj;
-                                                return acc;
+                                                return (acc);
                                             }, 
                                             {}
                                         );
@@ -117,8 +118,8 @@ export class GithubSearchComponent extends ComponentBase implements OnInit
 
     /**
      * Bookmark or unbookmark depend on the value.
-     * @param repo 
-     * @param value 
+     * @param repo The repositories.
+     * @param value The value identify which action to do.
      */
     public bookmark(repo: any, value: boolean): void
     {

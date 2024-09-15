@@ -16,18 +16,18 @@ export class BookmarkService {
      * Get bookmarks list.
      * @returns Return list of bookmarks.
      */
-    getBookmarks(): any[]
+    public getBookmarks(): any[]
     {
         const bookmarks = sessionStorage.getItem(this.bookmarkStorageKey);
 
-        return bookmarks ? JSON.parse(bookmarks) : [];
+        return (bookmarks ? JSON.parse(bookmarks) : []);
     }
 
     /**
      * Add bookmark to session storage.
      * @param repo Repo object.
      */
-    addBookmark(repo: any): void
+    public addBookmark(repo: any): void
     {
         const bookmarks = this.getBookmarks();
         bookmarks.push(repo);
@@ -38,7 +38,7 @@ export class BookmarkService {
      * Remove bookmark by repo id.
      * @param repoId Unique repo id.
      */
-    removeBookmark(repoId: number): void
+    public removeBookmark(repoId: number): void
     {
         let bookmarks = this.getBookmarks();
         bookmarks     = bookmarks.filter((repo: any) => repo.id !== repoId);

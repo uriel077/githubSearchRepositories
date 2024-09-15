@@ -11,7 +11,7 @@ export class LocalStorageService
      */
     public getValue(key: string): any | null
     {
-        return localStorage.getItem(key);
+        return (localStorage.getItem(key));
     }
 
     /**

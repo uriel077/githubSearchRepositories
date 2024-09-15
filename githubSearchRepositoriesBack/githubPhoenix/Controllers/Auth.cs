@@ -60,6 +60,7 @@ namespace GithubPhoenix.Controllers
             };
 
             Response.Cookies.Append("AuthCookie", "", cookieOptions);
+            Response.Headers.Append("JWT", "");
 
             return Ok(new { message = "Logged out successfully" });
         }
